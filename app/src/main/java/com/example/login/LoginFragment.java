@@ -1,10 +1,8 @@
 package com.example.login;
 
 import static android.content.ContentValues.TAG;
-import static android.content.Intent.getIntent;
 import static android.widget.Toast.LENGTH_SHORT;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -91,15 +89,11 @@ public class LoginFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
-        String htmlcontent = ("<a href=\"...\">Forgot password?</a>");
         edtEmailSI = view.findViewById(R.id.edtEmailSI);
         edtPwSI = view.findViewById(R.id.edtPwSI);
 
         edtEmailSI.setText(mParam1);
         edtPwSI.setText(mParam2);
-        tv3 = view.findViewById(R.id.tvFgPw);
-        tv3.setText(android.text.Html.fromHtml(htmlcontent));
 
 
         btnSI = view.findViewById(R.id.btnSI);
@@ -139,10 +133,10 @@ public class LoginFragment extends Fragment {
         btnSU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SingUpFragment singUpFragment = SingUpFragment.newInstance(null, null);
+                RegisterFragment registerFragment = RegisterFragment.newInstance(null, null);
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.frContainer, singUpFragment)
+                        .replace(R.id.frContainer, registerFragment)
 //                        .addToBackStack(null)
                         .commit();
             }

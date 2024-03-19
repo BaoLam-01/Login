@@ -4,8 +4,6 @@ import static android.content.ContentValues.TAG;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -117,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void putData() {
             InfAccount.getData(listUser);
-            SingUpFragment.getData(listUser);
+            RegisterFragment.getData(listUser);
             LoginFragment.getData(listUser);
     }
 

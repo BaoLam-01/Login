@@ -5,13 +5,11 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -90,10 +88,10 @@ public class HomeFragment extends Fragment {
         btnSingUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SingUpFragment singUpFragment = SingUpFragment.newInstance(null, null);
+                RegisterFragment registerFragment = RegisterFragment.newInstance(null, null);
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.frContainer,singUpFragment)
+                        .replace(R.id.frContainer, registerFragment)
                         .commit();
             }
         });

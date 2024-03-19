@@ -3,7 +3,6 @@ package com.example.login;
 import static android.content.ContentValues.TAG;
 import static android.widget.Toast.LENGTH_SHORT;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -24,10 +23,10 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SingUpFragment#newInstance} factory method to
+ * Use the {@link RegisterFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SingUpFragment extends Fragment {
+public class RegisterFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -41,7 +40,7 @@ public class SingUpFragment extends Fragment {
     private Button btnSU2, btnSI2;
     private static ArrayList<User> listUser;
 
-    public SingUpFragment() {
+    public RegisterFragment() {
         // Required empty public constructor
     }
 
@@ -54,8 +53,8 @@ public class SingUpFragment extends Fragment {
      * @return A new instance of fragment SingUpFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SingUpFragment newInstance(String param1, String param2) {
-        SingUpFragment fragment = new SingUpFragment();
+    public static RegisterFragment newInstance(String param1, String param2) {
+        RegisterFragment fragment = new RegisterFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -77,7 +76,7 @@ public class SingUpFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sing_up, container, false);
+        return inflater.inflate(R.layout.fragment_register, container, false);
     }
 
     @Override
