@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Login</string>
-    <string name="hello">Hello my friend</string>
-    <string name="text">Dang nhap thu di hehe </string>
+    <string name="hello">Welcome back</string>
+    <string name="text">Login to your account</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <!-- Strings related to login -->
@@ -18,6 +18,6 @@
     <string name="todo">TODO</string>
     <string name="create_account"> \ Create Account</string>
     <string name="login">Log In</string>
-    <string name="terms"><![CDATA[Terms & Conditions]]></string>
+    <string name="terms">Terms &amp; Conditions</string>
     <string name="privacy">Privacy Policy</string>
 </resources>

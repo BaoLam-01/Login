@@ -3,6 +3,7 @@ package com.example.login;
 import static android.content.ContentValues.TAG;
 import static android.widget.Toast.LENGTH_SHORT;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -113,12 +114,14 @@ public class LoginFragment extends Fragment {
                     Log.d(TAG, "onClick: " + checkEmailAndPassword(edtEmailSI.getText().toString().trim(),edtPwSI.getText().toString().trim())  );
 
                     if (checkEmailAndPassword(edtEmailSI.getText().toString().trim(),edtPwSI.getText().toString().trim())) {
-                        InfAccount infAccount = InfAccount.newInstance(edtEmailSI.getText().toString().trim(), null);
+                        OTPFragment otpFragment = OTPFragment.newInstance(edtEmailSI.getText().toString().trim(), null);
                         getActivity().getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.frContainer, infAccount)
+                                .replace(R.id.frContainer, otpFragment)
                                 .commit();
+
                         Toast.makeText(getContext(), edtEmailSI.getText().toString(), LENGTH_SHORT).show();
+
 
                     }else {
                         Toast.makeText(getContext(), "Ten dang nhap hoac mat khau khong dung!", LENGTH_SHORT).show();
@@ -139,6 +142,7 @@ public class LoginFragment extends Fragment {
                         .replace(R.id.frContainer, registerFragment)
 //                        .addToBackStack(null)
                         .commit();
+
             }
         });
 

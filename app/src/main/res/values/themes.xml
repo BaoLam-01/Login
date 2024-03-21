@@ -3,6 +3,7 @@
     <style name="Base.Theme.Login" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="Theme.Login" parent="Base.Theme.Login" />

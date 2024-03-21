@@ -7,18 +7,16 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
 
-
         <ImageView
 
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="124dp"
+            android:layout_marginBottom="164dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/img_home"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +28,7 @@
 
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="180dp"
+            android:layout_marginBottom="250dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/shadow"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -38,65 +36,74 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="412dp"
-            android:fontFamily=""
-            android:gravity="center"
-            android:text="@string/hello"
-            android:textAlignment="center"
-            android:textColor="#5D4037"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/text"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <Button
-            android:id="@+id/btnSignIn"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="516dp"
-            android:background="@drawable/bg_gradientcl"
-            android:text="@string/sign_in"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/btnSignUp"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/vien_vang"
-            android:textAllCaps="false"
-            android:textColor="#FFB537"
-            android:textStyle="bold"
-            android:text="@string/sign_up"
-            app:layout_constraintStart_toStartOf="@+id/btnSignIn"
-            app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="30dp">
 
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="432dp"
+                android:fontFamily="@font/abrilfatface_regular"
+                android:gravity="center"
+                android:text="BERRY JUICE"
+                android:textAlignment="center"
+                android:textColor="#5D4037"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="We provide a variety of fresh\njuices with various flavours.\nGet fresh juices easily"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="566dp"
+                android:background="@drawable/bg_gradientcl"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/vien_vang"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="#FFB537"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/btnSignIn"
+                app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>
