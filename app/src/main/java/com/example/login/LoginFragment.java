@@ -106,7 +106,7 @@ public class LoginFragment extends Fragment {
 
                 if (edtEmailSI.getText().toString().trim().isEmpty() ||
                         edtPwSI.getText().toString().trim().isEmpty()) {
-                    Toast.makeText(getContext(), "Ten dang nhap hoac mat khau khong duoc de trong!", LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Username or password cannot be left blank!", LENGTH_SHORT).show();
                 }else{
                     MainActivity mainActivity = new MainActivity();
                     mainActivity.putData();
@@ -124,7 +124,7 @@ public class LoginFragment extends Fragment {
 
 
                     }else {
-                        Toast.makeText(getContext(), "Ten dang nhap hoac mat khau khong dung!", LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Username or password is incorrect!", LENGTH_SHORT).show();
                     }
                 }
 

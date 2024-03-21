@@ -114,7 +114,7 @@ public class RegisterFragment extends Fragment {
                         edtAdrSU.getText().toString().trim().isEmpty() ||
                         edtPwSU.getText().toString().trim().isEmpty() ||
                         edtCfPwSU.getText().toString().trim().isEmpty()) {
-                    Toast.makeText(getContext(), "Thong tin khong duoc de trong!", LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Cannot be left blank!", LENGTH_SHORT).show();
                 } else {
                     if (edtEmailSU.getText().toString().trim().length() < 11 ||
                             !edtEmailSU.getText().toString().substring(
@@ -122,19 +122,19 @@ public class RegisterFragment extends Fragment {
                                             .toString()
                                             .length() - 10).equals("@gmail.com")) {
 
-                        Toast.makeText(getContext(), "Email khong dung dinh dang!", LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Email is not valid!", LENGTH_SHORT).show();
 
                     } else if (checkEmail(edtEmailSU.getText().toString().trim())) {
 
-                        Toast.makeText(getContext(), "Email da ton tai hay nhap mot Email khac!", LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Email already exists, please enter another email!", LENGTH_SHORT).show();
 
                     } else if (edtPwSU.getText().toString().length() < 6 ||
                             edtPwSU.getText().toString().indexOf(" ") != -1) {
-                        Toast.makeText(getContext(), "Luu y mat khau phai nhieu hon 6 ky tu va " +
-                                "khong chua khoang trang!", LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Password must be more than 6 characters and " +
+                                "cannot contain spaces!", LENGTH_SHORT).show();
                     } else if (!edtCfPwSU.getText().toString().equals(edtPwSU.getText().toString())) {
 
-                        Toast.makeText(getContext(), "Mat khau khong trung khop!", LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Passwords do not match!", LENGTH_SHORT).show();
                     } else {
                         User user = new User(listUser.size()+1, edtEmailSU.getText().toString().trim(),
                                 edtAdrSU.getText().toString().trim(),

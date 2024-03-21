@@ -89,9 +89,9 @@ public class InfAccount extends Fragment {
 
         for (User i : listUser) {
             if (i.getEmail().equals(mParam1)) {
-                textView1.setText("Xin chao " + i.getEmail()+ "!");
+                textView1.setText("Hello " + i.getEmail()+ "!");
                 textView.setText(
-                        "Thong tin khach hang: \n" +
+                        "Customer information: \n" +
                         "User Id: " + i.getId() + "\n"+
                         "Email: " + i.getEmail() +"\n"+
                         "Address: " + i.getAddress()
