@@ -63,7 +63,7 @@
                 android:id="@+id/edtEmailSU"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="258dp"
+                android:layout_marginTop="268dp"
                 android:background="@drawable/vien_vang"
                 android:hint="Email"
                 android:paddingHorizontal="14dp"
